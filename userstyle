@@ -371,7 +371,6 @@ input[name="searchBoxInput"] { /*Searcbox text*/
     color: #0c0 !important;
 }
 
-
 .Jea.KS5.wsz.zI7.iyn.Hsu { /*Bottom bar on logged-out page*/
     background: #050 !important;
 }
@@ -388,9 +387,9 @@ input[name="searchBoxInput"] { /*Searcbox text*/
 .FNs.XiG.zI7.iyn.Hsu {
     background: #fff0 !important;
 }
+
 /*Gradient before "more" button on pin pages*/
-.MIw.zI7.iyn.Hsu {
+.MIw.zI7.iyn.Hsu:not(.MIw.QLY.Rym.ho-.ojN.p6V.sLG.zI7.iyn.Hsu) {
     background: #fff0 !important;
 }
-
 }
