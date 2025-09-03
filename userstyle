@@ -1,15 +1,14 @@
 /* ==UserStyle==
-@name         Dark forest pinterest mode
-@version      20250318.13.09
-@namespace    USO Archive
-@description  Dark green pinterest
+@name         Dark forest pinterest
+@version      20250808.11.30
+@namespace    https://userstyles.world/user/Yeosangist
+@description  Changes the background and colours of Pinterest to a shadowy forest aesthetic.
 @author       Yeosangist
 @license      CC0
-@preprocessor uso
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.pinterest."), regexp("^https?:\\/\\/(www|[a-z]{2}).pinterest.(com(.(au|mx))?|(co.uk)|ca|se|jp|fr|de|es|ch|dk|nz|ch|ie|pt|ru|it)\\/.*") {
-:root {
+:root { /*Expect more updates soon as Pinterest is chaging their CSS variables*/
     --g-colorSchemeName: lightMode;
     --color-red-pushpin-0: #fff7f7;
     --color-red-pushpin-50: #ffebeb;
@@ -137,13 +136,11 @@
     --color-data-visualization-success-text: #00550e;
     --color-data-visualization-error-graph: #ed0000;
     --color-data-visualization-error-text: #cc0000;
-    --color-text-default: #0c0;
     --color-text-subtle: #090;
     --color-text-success: #00cc00;
     --color-text-disabled: #a5a5a5;
     --color-text-error: #cc0000;
     --color-text-warning: #bd5b00;
-    --color-text-inverse: #00dd00;
     --color-text-dark: #0a0;
     --color-text-light: #0a0;
     --color-text-shopping: #00cc00;
@@ -151,7 +148,6 @@
     --color-text-formfield-default: #111111;
     --color-text-formfield-disabled: #767676;
     --color-text-formfield-placeholder: #767676;
-    --color-icon-default: #0a0;
     --color-icon-subtle: #007700;
     --color-icon-success: #009900;
     --color-icon-disabled: #a5a5a5;
@@ -182,7 +178,7 @@
     --color-background-primary-base: #008800;
     --color-background-primary-strong: #b60000;
     --color-background-primary-weak: #f47171;
-    --color-background-secondary-base: #e9e9e9;
+    --color-background-secondary-base: #e9e9e900;
     --color-background-secondary-strong: #a5a5a5;
     --color-background-secondary-weak: #cdcdcd;
     --color-background-tertiary-base: #767676;
@@ -196,7 +192,6 @@
     --color-background-brand: #e60023;
     --color-background-education: #008800;
     --color-background-wash-dark: rgba(0, 0, 0, 0.8);
-    --color-background-wash-light: rgba(255, 255, 255, 0.9);
     --color-background-dark: #111111;
     --color-background-light: #ffffff;
     --color-background-elevation-accent: #f1f1f1;
@@ -265,10 +260,10 @@
     --color-background-button-semitransparentdefault-hover: rgba(0, 50, 0, .9);
     --color-background-button-semitransparentwhite-active: #e0e0e000;
     --color-background-button-semitransparentdark-default: rgba(51, 51, 51, 0.8);
-    --color-background-button-semitransparentdark-hover: #121212;
+    --color-background-button-semitransparentdark-hover: #020;
     --color-background-button-semitransparentdark-active: #1f1f1f;
     --color-background-button-disabled-default: #e9e9e9;
-    --color-background-button-selected-default: #15b100;
+    --color-background-button-selected-default: #040;
     --color-background-button-dark-default: #0307;
     --color-background-button-dark-hover: #0107;
     --color-background-combobox-item-default: rgba(0, 0, 0, 0);
@@ -345,6 +340,25 @@
     --color-border-pulsar-hover: #dce9fa;
     --color-border-table-row-selected: #111111;
     --color-border-tag-disabled: #767676;
+    --comp-button-color-background-primary-default: #050;
+    --comp-button-color-background-primary-selected: #040;
+    --comp-button-color-hover-background-primary-default: #030;
+    --comp-button-color-background-secondary-default: #050;
+    --comp-button-color-background-tertiary-default: #050;
+    --comp-button-color-hover-background-transparent-inverse-default: #00140a80;
+    --sema-color-hover-background-elevation: #040;
+    --sema-color-hover-background-primary: #040;
+    --sema-color-hover-background-selected: #020;
+    --sema-color-background-selected: #040;
+    --sema-color-background-primary: #060;
+    --sema-color-background-secondary: #040;
+    --sema-color-background-default: #0000;
+    --sema-color-background-elevation: #010;
+    --sema-color-background-wash-light: #0000;
+    --sema-color-icon-default: #0a0;
+    --sema-color-icon-primary: #080;
+    --sema-color-text-default: #48ac48;
+    --sema-color-text-inverse: #0d0;
     --elevation-floating: 0 0 8px rgba(0, 0, 0, 0.10);
     --elevation-raised-top: 0 2px 8px rgba(0, 0, 0, 0.12);
     --elevation-raised-bottom: 0 -2px 8px rgba(0, 0, 0, 0.12);
@@ -387,9 +401,31 @@ input[name="searchBoxInput"] { /*Searcbox text*/
 .FNs.XiG.zI7.iyn.Hsu {
     background: #fff0 !important;
 }
-
 /*Gradient before "more" button on pin pages*/
-.MIw.zI7.iyn.Hsu:not(.MIw.QLY.Rym.ho-.ojN.p6V.sLG.zI7.iyn.Hsu) {
+.MIw.zI7.iyn.Hsu:not(.MIw.QLY.Rym.ho-.ojN.p6V.sLG.zI7.iyn.Hsu):not(.Yl-.MIw.Hb7) {
     background: #fff0 !important;
+}
+
+.zI7 { /*Makes most backgrounds transparent*/
+    background-color:rgb(0, 0, 0, 0) !important;
+}
+
+.XiG.Z2K.zI7 {
+    background-color:rgb(0, 0, 0, 0) !important;
+}
+
+.Kzl.zI7 { /*Side nav bar*/
+    background-color: rgb(0 20 10 / 50%) !important;
+}
+.Jea.KS5.XiG.ujU.zI7 { /*Search bar background*/
+    background-color: rgb(0 20 10 / 50%) !important;
+}
+
+.MIw.Rym.imm.sLG.zI7 { /*Search results box background*/
+    background-color: rgb(0 20 10 / 80%) !important;
+}
+
+.scrollableList { /*Notification list background*/
+    background-color: rgb(0, 20, 10, 0.8);
 }
 }
