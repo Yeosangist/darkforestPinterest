@@ -8,104 +8,8 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.pinterest."), regexp("^https?:\\/\\/(www|[a-z]{2}).pinterest.(com(.(au|mx))?|(co.uk)|ca|se|jp|fr|de|es|ch|dk|nz|ch|ie|pt|ru|it)\\/.*") {
-:root { /*Expect more updates soon as Pinterest is chaging their CSS variables*/
+    :root { # updating for github hi
     --g-colorSchemeName: lightMode;
-    --color-red-pushpin-0: #fff7f7;
-    --color-red-pushpin-50: #ffebeb;
-    --color-red-pushpin-100: #ffe0e0;
-    --color-red-pushpin-200: #fcbbbb;
-    --color-red-pushpin-300: #f47171;
-    --color-red-pushpin-400: #eb4242;
-    --color-red-pushpin-450: #e60023;
-    --color-red-pushpin-500: #cc0000;
-    --color-red-pushpin-600: #b60000;
-    --color-red-pushpin-700: #9b0000;
-    --color-red-pushpin-800: #800000;
-    --color-red-pushpin-900: #660000;
-    --color-pink-flaminglow-0: #fff8fa;
-    --color-pink-flaminglow-50: #ffebf1;
-    --color-pink-flaminglow-100: #ffdfe9;
-    --color-pink-flaminglow-200: #ffbed2;
-    --color-pink-flaminglow-300: #fe8eb1;
-    --color-pink-flaminglow-400: #f76593;
-    --color-pink-flaminglow-450: #ee376a;
-    --color-pink-flaminglow-500: #de2c62;
-    --color-pink-flaminglow-600: #c31952;
-    --color-pink-flaminglow-700: #a30c4a;
-    --color-pink-flaminglow-800: #82053e;
-    --color-pink-flaminglow-900: #630233;
-    --color-blue-skycicle-0: #f7fbff;
-    --color-blue-skycicle-50: #e6f4ff;
-    --color-blue-skycicle-100: #d7edff;
-    --color-blue-skycicle-200: #abdbff;
-    --color-blue-skycicle-300: #75bfff;
-    --color-blue-skycicle-400: #45a3fe;
-    --color-blue-skycicle-450: #007cff;
-    --color-blue-skycicle-500: #0074e8;
-    --color-blue-skycicle-600: #005fcb;
-    --color-blue-skycicle-700: #004ba9;
-    --color-blue-skycicle-800: #003c96;
-    --color-blue-skycicle-900: #002966;
-    --color-teal-spabattical-0: #f7fdfc;
-    --color-teal-spabattical-50: #e6faf5;
-    --color-teal-spabattical-100: #ccf6ee;
-    --color-teal-spabattical-200: #75e4d5;
-    --color-teal-spabattical-300: #48d5c6;
-    --color-teal-spabattical-400: #26c0b4;
-    --color-teal-spabattical-450: #009990;
-    --color-teal-spabattical-500: #00857c;
-    --color-teal-spabattical-600: #006b6c;
-    --color-teal-spabattical-700: #005c62;
-    --color-teal-spabattical-800: #005062;
-    --color-teal-spabattical-900: #003440;
-    --color-green-matchacado-0: #f6fdf5;
-    --color-green-matchacado-50: #e3fae1;
-    --color-green-matchacado-100: #c3f9c2;
-    --color-green-matchacado-200: #a4f9ac;
-    --color-green-matchacado-300: #6bec8c;
-    --color-green-matchacado-400: #39d377;
-    --color-green-matchacado-450: #1dad65;
-    --color-green-matchacado-500: #008753;
-    --color-green-matchacado-600: #005f3e;
-    --color-green-matchacado-700: #00422c;
-    --color-green-matchacado-800: #003020;
-    --color-green-matchacado-900: #00261a;
-    --color-purple-mysticool-0: #f8f7ff;
-    --color-purple-mysticool-50: #f0edff;
-    --color-purple-mysticool-100: #e9e4ff;
-    --color-purple-mysticool-200: #d5c7ff;
-    --color-purple-mysticool-300: #b190ff;
-    --color-purple-mysticool-400: #9e68ff;
-    --color-purple-mysticool-450: #8a39fa;
-    --color-purple-mysticool-500: #812ae7;
-    --color-purple-mysticool-600: #6b16ca;
-    --color-purple-mysticool-700: #550aa9;
-    --color-purple-mysticool-800: #400387;
-    --color-purple-mysticool-900: #2c0066;
-    --color-orange-firetini-0: #fff6eb;
-    --color-orange-firetini-50: #fff0db;
-    --color-orange-firetini-100: #ffe4c1;
-    --color-orange-firetini-200: #ffc58f;
-    --color-orange-firetini-300: #fda161;
-    --color-orange-firetini-400: #f77a38;
-    --color-orange-firetini-450: #ff5b45;
-    --color-orange-firetini-500: #de3700;
-    --color-orange-firetini-600: #c32f00;
-    --color-orange-firetini-700: #a42700;
-    --color-orange-firetini-800: #842000;
-    --color-orange-firetini-900: #660e00;
-    --color-yellow-caramellow-0: #fffedb;
-    --color-yellow-caramellow-50: #fffebb;
-    --color-yellow-caramellow-100: #fffd92;
-    --color-yellow-caramellow-200: #fae600;
-    --color-yellow-caramellow-300: #fdc900;
-    --color-yellow-caramellow-400: #e18d00;
-    --color-yellow-caramellow-450: #d86800;
-    --color-yellow-caramellow-500: #bd5b00;
-    --color-yellow-caramellow-600: #aa4900;
-    --color-yellow-caramellow-700: #943a00;
-    --color-yellow-caramellow-800: #7c2d00;
-    --color-yellow-caramellow-900: #662400;
     --color-white-mochimalist-0: #ffffff;
     --color-gray-roboflow-50: #f9f9f9;
     --color-gray-roboflow-100: #f1f1f1;
@@ -347,6 +251,7 @@
     --comp-button-color-background-tertiary-default: #050;
     --comp-button-color-hover-background-transparent-inverse-default: #00140a80;
     --sema-color-hover-background-elevation: #040;
+    --sema-color-text-subtle: #292b;
     --sema-color-hover-background-primary: #040;
     --sema-color-hover-background-selected: #020;
     --sema-color-background-selected: #040;
@@ -359,6 +264,7 @@
     --sema-color-icon-primary: #080;
     --sema-color-text-default: #48ac48;
     --sema-color-text-inverse: #0d0;
+    --sema-color-text-light: #0d0;
     --elevation-floating: 0 0 8px rgba(0, 0, 0, 0.10);
     --elevation-raised-top: 0 2px 8px rgba(0, 0, 0, 0.12);
     --elevation-raised-bottom: 0 -2px 8px rgba(0, 0, 0, 0.12);
@@ -373,7 +279,7 @@
 } /*White bit behind suggestion buttons on home page*/
 
 body {
-    background-image: url(https://wallpaperaccess.com/full/2081927.jpg)!important; /*Background*/
+    background-image: url(https://wallpaperaccess.com/full/2081927.jpg) !important; /*Background*/
     background-repeat: no-repeat !important;
     background-attachment: fixed;
     background-position: center;
@@ -406,12 +312,20 @@ input[name="searchBoxInput"] { /*Searcbox text*/
     background: #fff0 !important;
 }
 
-.zI7 { /*Makes most backgrounds transparent*/
+.zI7, .ADXRXN:not(.ADXRXN.WTrvgR._tKaHB.ecEhnF.zEVE_X) { /*Makes most backgrounds transparent*/
     background-color:rgb(0, 0, 0, 0) !important;
 }
+    
+.ecEhnF {
+      background-color: #000100;
+    }
 
 .XiG.Z2K.zI7 {
     background-color:rgb(0, 0, 0, 0) !important;
+}
+
+.KvKvqR > div {
+    background-color: transparent !important;
 }
 
 .Kzl.zI7 { /*Side nav bar*/
@@ -427,5 +341,9 @@ input[name="searchBoxInput"] { /*Searcbox text*/
 
 .scrollableList { /*Notification list background*/
     background-color: rgb(0, 20, 10, 0.8);
+}
+
+.ADXRXN._tKaHB.bnBtRO.ecEhnF.n62I2n.sSBu24.zEVE_X { /*White border on side nav*/
+    border-right: none !important;
 }
 }
